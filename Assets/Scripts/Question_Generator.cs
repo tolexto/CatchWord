@@ -12,37 +12,37 @@ public class Question_Generator : MonoBehaviour
     public int counter = 0;
     public int currentlevel;
 
-    string[] questionList = new string[] { "Say my name! \n...\n You're goddamn right!", "Great powers comes with \n...\nresponsbilities", "Beni beni\n...", "and I am \n...", "-Is it terrifing?\n+...", "Sorular bitti. Baþa sarmak için tekrar bas!" };
+    string[] questionList = new string[] { "Say my name! \n...\n You're goddamn right!", "Great powers comes with \n...\nresponsbilities", "Beni beni\n...", "and I am \n...", "-Is it terrifing?\n+...", "Sorular bitti. BaÃ¾a sarmak iÃ§in tekrar bas!" };
     string[] answerList = new string[] { "heisenberg", "great", "bihterini", "iron man", "no", null };
 
     public void turkishCharacter()
     {
-        if (inputText.text.Contains("ý"))
+        if (inputText.text.Contains("Ã½"))
         {
             inputText.text = inputText.text.Substring(0, inputText.text.Length - 1) + "i";
         }//if sonu
 
-        else if (inputText.text.Contains("þ"))
+        else if (inputText.text.Contains("Ã¾"))
         {
             inputText.text = inputText.text.Substring(0, inputText.text.Length - 1) + "s";
         }//elseif sonu
 
-        else if (inputText.text.Contains("ç"))
+        else if (inputText.text.Contains("Ã§"))
         {
             inputText.text = inputText.text.Substring(0, inputText.text.Length - 1) + "c";
         }//elseif sonu
 
-        else if (inputText.text.Contains("ð"))
+        else if (inputText.text.Contains("Ã°"))
         {
             inputText.text = inputText.text.Substring(0, inputText.text.Length - 1) + "g";
         }//elseif sonu
 
-        else if (inputText.text.Contains("ü"))
+        else if (inputText.text.Contains("Ã¼"))
         {
             inputText.text = inputText.text.Substring(0, inputText.text.Length - 1) + "u";
         }//elseif sonu
 
-        else if (inputText.text.Contains("ö"))
+        else if (inputText.text.Contains("Ã¶"))
         {
             inputText.text = inputText.text.Substring(0, inputText.text.Length - 1) + "o";
         }//elseif sonu
@@ -74,7 +74,7 @@ public class Question_Generator : MonoBehaviour
         }//else sonu
     }//ButtonPressed() sonu
     
-    public void SavePlayer(Question_Generator player)
+    public void SavePlayer(Question_Generator player) //??
     {
         SaveSystem.SavePlayer(this);
     }
