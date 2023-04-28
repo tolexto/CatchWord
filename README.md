@@ -3,7 +3,7 @@ An Unity Casual game. It's basically a word game for finding punchlines.
 
 This is my first Unity game try. I am actually a Unreal Dev. but because of big files, I can't commit them in GitHUB. As a newbie Unity dev. there will be some;
 * funny bugs
-* misscoding
+* miscoding
 * unnecessary parts etc. 
 
 Be gentle to me.
